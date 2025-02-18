@@ -38,11 +38,15 @@ int main()
     third -> next = NULL;
     head = first;
 
+    // insert at the beginning
+
     node*newnode;
     newnode = malloc(sizeof(node));
     newnode -> data = 1;
     newnode -> next = head;
     head = newnode;
+
+    // insert at the last
 
     node*newnode2;
     newnode2 = malloc(sizeof(node));
@@ -56,6 +60,8 @@ int main()
     }
 
     temp -> next = newnode2;
+
+    // insert at the fix point
 
     node* newnode3;
     newnode3 = malloc(sizeof(node));
@@ -78,6 +84,8 @@ int main()
 
     printf("\n");
 
+    // delete from the beginning
+
     if (head != NULL)
     {
         temp = head;
@@ -88,6 +96,8 @@ int main()
     print(head);
     printf("\n");
 
+
+    // delete from fix point
 
     temp = head;
     while (temp != NULL && temp->next != NULL && temp -> next -> data != 4)
