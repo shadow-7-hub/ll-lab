@@ -55,6 +55,7 @@ void main(){
    insertatlast(8);
    insertatlast(10);
    insertatlast(12);
+   insertatlast(14);
 
    printf("Linked List: ");
 
