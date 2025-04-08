@@ -223,10 +223,10 @@ void deleteEmployee(int id) {
 void displayAllEmployees() {
     printf("\nAll Employees:\n");
     printf("ID\tName\t\tAge\tGender\tShift\tSalary\tEmail\t\tContact\t\tBlood Group\n");
-    printf("----------------------------------------------------------------------------------------\n");
+    printf("---------------------------------------------------------------------------------------------\n");
     Employee *current = head;
     while (current != NULL) {
-        printf("%d\t%s\t\t%d\t%s\t%s\t%.2f\t%s\t%s\t%s\n",
+        printf("%d\t%s\t%d\t%s\t%s\t%.2f\t%s\t%s\t%s\n",
                current->id, current->name, current->age, current->gender,
                current->shift, current->salary, current->email, current->contact, current->blood_group);
         current = current->next;
